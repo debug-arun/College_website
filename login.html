@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STUDENT LOGIN</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+</head>
+
+<body>
+    <section class="detail">
+    <div class="container top">
+        <nav>
+        <div class="menu">
+            <ul>
+            <li>
+                <a href="#" class="fa fa-home" > <span>Home</span></a>
+            </li>
+            <li>
+                <a href="http://www.gctcportal.in/p/index.html" class="fa fa-newspaper-o" > <span>Announcements</span></a>
+            </li>
+            <li>
+                <a href="#" class="	fa fa-handshake-o"> <span>Placements</span></a>
+            </li>
+            <li>
+                <a href="#" class="	fa fa-book"> <span>Library</span></a>
+            </li>
+            </ul>
+        </div>
+        <div class="social-icons">
+
+            <a href="#" class="fa fa-bell"> <span>Contact Us</span> </a>
+
+            <span> | </span>
+            <a class="fa fa-facebook" href="https://www.facebook.com/gcetportal" style="color:#3b5999">&nbsp;</a>
+            <a class="fa fa-instagram" href="https://www.instagram.com/gctcportal/" style="color:#e4405f">&nbsp;</a>
+            <a class="fa fa-linkedin" href="https://www.linkedin.com/school/gctcportal/" style="color:#0077B5">&nbsp;</a>
+            <a class="fa fa-twitter" href="https://twitter.com/gctcportal" style="color:#55acee">&nbsp;</a>
+            <a class="fa fa-whatsapp" href="https://goo.gl/V1sFaW" style="color:#25D366">&nbsp;</a>
+        </div>
+        </nav>
+    </div>
+    </div>
+    <div class= "hero">
+        <div class = "form-box">
+            <p>STUDENT LOGIN</p>
+            <div class = "button-box">
+                <div id="btn"></div>
+                <button type="button" class ="toggle-btn" onclick= "login()">Log In</button>
+                <button type="button" class ="toggle-btn" onclick= "register()">Register</button>
+            </div>
+            <form id= "login" class="input-group">
+                <input type="text" class= "input-field" placeholder= "Roll Number" required>
+                <input type="password" class= "input-field" placeholder= "Password" required>
+                <input type="checkbox" class= "check-box"><span>Remember Me</span>
+                <button type="button" class= "submit-btn">LOG IN</button>
+            </form>
+            <form id= "register" class="input-group">
+                <input type="text" class= "input-field" placeholder= "Roll Number"
+                required>
+                <input type="email" class= "input-field" placeholder= "Email ID"
+                required>
+                <input type="text" class= "input-field" placeholder= "Password"
+                required>
+                <input type="text" class= "input-field" placeholder= "Re-enter the Password"
+                required>
+                <input type="checkbox" class= "check-box" required><span>I agree to the terms and conditions</span>
+                <button type="button" class= "submit-btn">Register</button>
+            </form>
+        </div>
+
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+        </script>
+        </div>
+    </section>
+</body>
+</html>
